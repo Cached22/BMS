@@ -1,0 +1,88 @@
+#email-dashboard-container {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.email-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: background-color 0.3s ease;
+}
+
+.email-item:hover {
+    background-color: #f0f0f0;
+}
+
+.email-item.unread {
+    font-weight: bold;
+}
+
+.email-item .priority-indicator {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.priority-high {
+    background-color: #ff5252;
+}
+
+.priority-medium {
+    background-color: #ffab40;
+}
+
+.priority-low {
+    background-color: #69f0ae;
+}
+
+.email-item .email-subject {
+    flex-grow: 1;
+}
+
+.email-item .email-preview {
+    color: #757575;
+    margin-right: 15px;
+}
+
+.email-item .email-date {
+    color: #bdbdbd;
+}
+
+.email-action-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #1e88e5;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #1565c0;
+}
+
+.button:disabled {
+    background-color: #a0a0a0;
+    cursor: not-allowed;
+}
+
+/* Shared styles */
+@import url('../ui_elements/ui_styles.css');

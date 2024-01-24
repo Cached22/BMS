@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Setup Wizard - Business Management System</title>
+    <link rel="stylesheet" href="../ui_elements/ui_styles.css">
+    <link rel="stylesheet" href="setup_wizard.css">
+    <script src="setup_wizard.js"></script>
+</head>
+<body>
+    <div id="setup-wizard-container" class="setup-wizard">
+        <header class="setup-header">
+            <h1>Welcome to the Business Management System Setup Wizard</h1>
+            <p>Please follow the steps to configure your system.</p>
+        </header>
+        <section class="setup-steps">
+            <div class="step">
+                <h2>Step 1: System Requirements</h2>
+                <p>Ensure your system meets the minimum requirements.</p>
+                <button onclick="checkSystemRequirements()">Check Requirements</button>
+            </div>
+            <div class="step">
+                <h2>Step 2: API Keys Configuration</h2>
+                <p>Enter the API keys for the social media platforms and other services.</p>
+                <form id="api-keys-form">
+                    <label for="instagramKey">Instagram API Key:</label>
+                    <input type="text" id="instagramKey" name="instagramKey">
+                    <!-- Repeat for other platforms -->
+                    <button type="submit">Save API Keys</button>
+                </form>
+            </div>
+            <div class="step">
+                <h2>Step 3: User Preferences</h2>
+                <p>Customize your user preferences for a personalized experience.</p>
+                <form id="user-preferences-form">
+                    <label for="theme">Select Theme:</label>
+                    <select id="theme" name="theme">
+                        <option value="light">Light</option>
+                        <option value="dark">Dark</option>
+                    </select>
+                    <!-- Additional preferences -->
+                    <button type="submit">Save Preferences</button>
+                </form>
+            </div>
+            <div class="step">
+                <h2>Step 4: Cloud Storage Setup</h2>
+                <p>Configure your cloud storage for data backup and scalability.</p>
+                <button onclick="setupCloudStorage()">Setup Cloud Storage</button>
+            </div>
+            <div class="step">
+                <h2>Step 5: Finalize Installation</h2>
+                <p>Complete the setup and launch your Business Management System.</p>
+                <button onclick="finalizeInstallation()">Complete Setup</button>
+            </div>
+        </section>
+        <footer class="setup-footer">
+            <p>If you need help at any point, please refer to the <a href="../documentation/troubleshooting_guide.md">Troubleshooting Guide</a> or the <a href="../documentation/faq.md">FAQ</a>.</p>
+        </footer>
+    </div>
+</body>
+</html>

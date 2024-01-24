@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graphics Design Interface</title>
+    <link rel="stylesheet" href="../ui_elements/ui_styles.css">
+    <link rel="stylesheet" href="design_interface.css">
+    <script src="design_interface.js"></script>
+</head>
+<body>
+    <div id="design-interface-container" class="design-interface">
+        <header class="header">
+            <h1>Graphics Design Interface</h1>
+        </header>
+        <main class="main-content">
+            <section class="design-tools">
+                <button id="template-design-btn" onclick="createDesign('template')">Use Template</button>
+                <button id="ai-design-btn" onclick="createDesign('ai')">AI-Driven Design</button>
+            </section>
+            <section class="design-preview">
+                <div id="design-preview-container">
+                    <!-- Design preview will be shown here -->
+                </div>
+            </section>
+            <section class="design-actions">
+                <button id="save-design-btn" onclick="saveDesign()">Save Design</button>
+                <button id="export-design-btn" onclick="exportDesign()">Export Design</button>
+            </section>
+        </main>
+        <footer class="footer">
+            <p>&copy; 2023 Business Management System</p>
+        </footer>
+    </div>
+    <script src="../ui_elements/ui_scripts.js"></script>
+</body>
+</html>

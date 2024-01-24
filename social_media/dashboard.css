@@ -1,0 +1,124 @@
+/* Main dashboard container */
+#dashboard-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 1200px;
+}
+
+/* Unified dashboard styles */
+.dashboard-panel {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  padding: 15px;
+  width: 100%;
+}
+
+/* Dashboard header */
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.dashboard-title {
+  font-size: 24px;
+  color: #333;
+}
+
+/* Social media platform tabs */
+.platform-tabs {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  border-bottom: 2px solid #eaeaea;
+}
+
+.platform-tab {
+  padding: 10px 20px;
+  cursor: pointer;
+  color: #555;
+  border-bottom: 3px solid transparent;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.platform-tab:hover,
+.platform-tab.active {
+  border-bottom-color: #007bff;
+}
+
+/* Content sections for each platform */
+.platform-content {
+  display: none; /* Hidden by default, shown when active */
+}
+
+.platform-content.active {
+  display: block;
+}
+
+/* Post scheduling, analytics, engagement tracking sections */
+.post-scheduling,
+.analytics-section,
+.engagement-tracking {
+  margin-top: 20px;
+}
+
+/* Analytics charts and graphs */
+.analytics-chart {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+/* Engagement tracking elements */
+.engagement-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.engagement-item {
+  background-color: #fff;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .dashboard-panel {
+    padding: 10px;
+  }
+
+  .dashboard-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .dashboard-title {
+    margin-bottom: 10px;
+  }
+
+  .platform-tabs {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .platform-tab {
+    width: 100%;
+    text-align: left;
+  }
+}
+
+/* Import shared UI styles */
+@import url('../ui_elements/ui_styles.css');

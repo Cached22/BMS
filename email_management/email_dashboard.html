@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Dashboard</title>
+    <link rel="stylesheet" href="../ui_elements/ui_styles.css">
+    <link rel="stylesheet" href="email_dashboard.css">
+    <script src="email_dashboard.js"></script>
+</head>
+<body>
+    <div id="email-dashboard-container">
+        <header>
+            <h1>Email Management</h1>
+        </header>
+        <section class="email-list">
+            <h2>Inbox</h2>
+            <div class="email-filters">
+                <button id="filter-unread">Unread</button>
+                <button id="filter-flagged">Flagged</button>
+                <button id="filter-priority">Priority</button>
+            </div>
+            <div class="email-items" id="email-items-container">
+                <!-- Email items will be populated here by email_dashboard.js -->
+            </div>
+        </section>
+        <section class="email-details" id="email-details-container">
+            <!-- Selected email details will be displayed here -->
+        </section>
+        <section class="email-actions">
+            <button id="reply-email">Reply</button>
+            <button id="forward-email">Forward</button>
+            <button id="delete-email">Delete</button>
+            <button id="mark-as-unread">Mark as Unread</button>
+            <button id="flag-email">Flag</button>
+        </section>
+        <footer>
+            <p>Business Management System - Email Dashboard</p>
+        </footer>
+    </div>
+    <div id="chat-window-container">
+        <!-- Chat window will be included here -->
+    </div>
+    <script src="../ui_elements/ui_scripts.js"></script>
+</body>
+</html>

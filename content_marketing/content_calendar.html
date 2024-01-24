@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content Marketing Calendar</title>
+    <link rel="stylesheet" href="../ui_elements/ui_styles.css">
+    <link rel="stylesheet" href="content_calendar.css">
+    <script src="content_calendar.js"></script>
+</head>
+<body>
+    <div id="content-calendar-container">
+        <header>
+            <h1>Content Marketing Calendar</h1>
+        </header>
+        <section class="calendar-controls">
+            <button id="prev-month">Previous Month</button>
+            <button id="next-month">Next Month</button>
+            <button id="today">Today</button>
+        </section>
+        <section class="calendar-view">
+            <div id="calendar"></div>
+        </section>
+        <section class="content-schedule">
+            <h2>Scheduled Content</h2>
+            <ul id="scheduled-content-list">
+                <!-- Content items will be dynamically inserted here -->
+            </ul>
+        </section>
+        <footer>
+            <button id="add-content-btn">Add Content</button>
+        </footer>
+    </div>
+    <script>
+        // Initialize the content calendar on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            initializeContentCalendar();
+        });
+    </script>
+</body>
+</html>
